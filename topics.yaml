@@ -1,0 +1,23 @@
+# ArXiv Paper Curator Topics Configuration
+# Each topic represents a research area with its own search queries and email settings
+
+topics:
+  speech_processing:
+    name: "Speech Processing Research"
+    description: "ASR, TTS, speech synthesis, and transcription"
+    searches:
+      # Comprehensive speech processing search from the provided URL
+      - url: "https://arxiv.org/search/advanced?advanced=&terms-0-operator=AND&terms-0-term=speech+recognition&terms-0-field=title&terms-1-operator=OR&terms-1-term=ASR&terms-1-field=title&terms-2-operator=OR&terms-2-term=speech+to+text&terms-2-field=title&terms-3-operator=OR&terms-3-term=transcription&terms-3-field=title&terms-4-operator=OR&terms-4-term=speech+synthesis&terms-4-field=title&terms-5-operator=OR&terms-5-term=text+to+speech&terms-5-field=title&terms-6-operator=OR&terms-6-term=speech+generation&terms-6-field=title&terms-7-operator=OR&terms-7-term=TTS&terms-7-field=title&terms-8-operator=OR&terms-8-term=speech+to+text&terms-8-field=abstract&terms-9-operator=OR&terms-9-term=&terms-9-field=abstract&terms-10-operator=OR&terms-10-term=text+to+speech&terms-10-field=abstract&terms-11-operator=OR&terms-11-term=&terms-11-field=abstract&terms-12-operator=OR&terms-12-term=&terms-12-field=abstract&classification-computer_science=y&classification-physics_archives=all&classification-include_cross_list=include&date-year=&date-filter_by=date_range&date-from_date=2025-07-01&date-to_date=2025-08-09&date-date_type=submitted_date&abstracts=show&size=25&order=-announced_date_first"
+    max_results: 50
+    days_back: 7
+    min_relevance_score: 7
+    schedule_days: ["Mon", "Wed", "Fri"]
+    recipient_email: "aleks@wordcab.com"
+
+# Global defaults (used when not specified in topic)
+defaults:
+  max_results: 30
+  days_back: 7
+  min_relevance_score: 7
+  schedule_days: ["Mon", "Wed", "Fri"]
+  # If no recipient_email specified in topic, use the default from .env

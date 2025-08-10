@@ -1,0 +1,19 @@
+# Core dependencies
+python-dotenv
+arxiv
+anthropic
+postmarker
+pypdf2==3.0.1
+ezgmail==2024.12.3
+requests
+pyyaml
+
+# Database
+# sqlite3 is included in Python standard library
+
+# Utilities
+python-dateutil
+
+# Optional but recommended
+numpy
+pandas
