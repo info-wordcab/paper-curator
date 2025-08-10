@@ -12,7 +12,7 @@ topics:
     days_back: 7
     min_relevance_score: 7
     schedule_days: ["Mon", "Wed", "Fri"]
-    recipient_email: "aleks@wordcab.com"
+    recipient_email: "your-email@example.com"
 
 # Global defaults (used when not specified in topic)
 defaults:
