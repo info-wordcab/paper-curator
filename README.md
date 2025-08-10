@@ -25,6 +25,7 @@ An automated system for discovering, filtering, and summarizing relevant researc
 
 2. **Configure Environment**:
    - Copy `.env.example` to `.env`
+   - Copy `topics.example.yaml` to `topics.yaml`
    - Add your API keys:
      - `CLAUDE_API_KEY`: Claude API key from Anthropic
      - `POSTMARK_SERVER_TOKEN`: Postmark API token

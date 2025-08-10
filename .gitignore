@@ -31,3 +31,4 @@ papers_database.db
 # Other
 temp/
 backups/
+topics.yaml
